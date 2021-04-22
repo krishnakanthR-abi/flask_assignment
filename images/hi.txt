@@ -1,0 +1,27 @@
+ilename: gives name of the file that the file object has opened.
+mode: attribute of a file object tells you which mode a file was opened in.
+More details of these modes are explained below
+
+How to Create a Text File in Python
+With Python Write to File, you can create a .text files (guru99.txt) by using the code, we have demonstrated here:
+
+Step 1)
+
+	f= open("guru99.txt","w+")
+We declared the variable f to open a file named guru99.txt. Open takes 2 arguments, the file that we want to open and a string that represents the kinds of permission or operation we want to do on the file
+Here, we used "w" letter in our argument, which indicates Python write to file and it will create a file if it does not exist in library
+Plus sign indicates both read and write for Python create file operation.
+Step 2)
+
+for i in range(10):
+     f.write("This is line %d\r\n" % (i+1))
+We have a for loop that runs over a range of 10 numbers.
+Using the write function to enter data into the file.
+The output we want to iterate in the file is "this is line number", which we declare with Python write to text file function and then percent d (displays integer)
+So basically we are putting in the line number that we are writing, then putting it in a carriage return and a new line character
+Step 3)
+
+	f.close() 
+This will close the instance of the file guru99.txt stored
+Here is the result after code execution for Python create file
+
